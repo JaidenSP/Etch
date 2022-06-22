@@ -1,36 +1,25 @@
 
+//have the divs creation used in a function, and style the divs in css
+//I will append the 16x16 divs to the container div 
 
- //Using the dom to grab the container div in the html file
- var container = document.getElementById('container-div');
+var container = document.getElementById("container-div");
 
- //using a for statement to create multiple divs
- for (i = 0; i < 256; i++) {
+//creating function for the divs creation and appendage to the parent div and adding of class the nod in the parameters stands for (numberOfDivs)
+function createDivs(nod){
 
-   //create a column and row divs that span 16x16 using the dom
-   var row = document.createElement('div');
+  for(i = 0; i < nod; i++){
 
-   //adding the row class to the row element
-   row.classList.add('row');
+     var row = document.createElement("div");
 
-   //appending the row child to the parent div
-   container.appendChild(row);
+     row.className = "row";
 
-    //styling the divs 
-  row.style.width = "100px";
-  row.style.height = "100px";
-  row.style.flexWrap;
-  row.style.flexDirection = "row";
-  row.style.display = "inline";
-  row.style.float = "left";
-  row.style.backgroundColor = "grey";
- }
+    container.appendChild(row);
 
+  }
 
- 
+}
 
-
-
-
+createDivs(16 * 16);
 
 
 
