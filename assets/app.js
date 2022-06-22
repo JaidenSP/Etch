@@ -13,9 +13,19 @@ function createDivs(nod){
 
      row.className = "row";
 
-    container.appendChild(row);
-
+     container.appendChild(row);
   }
+
+  //   for(j = 1; j < nod; j++){
+
+  //     var column = document.createElement("div");
+
+  //     column.className = "column";
+
+  //     container.appendChild(row);
+  //   }
+  //   container.appendChild(column);
+  // }
 
 }
 
